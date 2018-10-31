@@ -29,7 +29,7 @@ object PdfView {
      * @param directory directory path where pdf file will be saved
      * @param fileName name of the pdf file.
      */
-    fun createWebPrintJob(activity: Activity, webView: WebView, directory: File, fileName: String, callback: Callback) {
+    fun createWebPdfJob(activity: Activity, webView: WebView, directory: File, fileName: String, callback: Callback) {
 
         //check the marshmallow permission
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

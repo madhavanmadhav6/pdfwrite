@@ -189,7 +189,7 @@ class MainActivity : AppCompatActivity() {
             val progressDialog = ProgressDialog(this@MainActivity)
             progressDialog.setMessage("Please wait")
             progressDialog.show()
-            PdfView.createWebPrintJob(this@MainActivity, webView, file, fileName, object : PdfView.Callback {
+            PdfView.createWebPdfJob(this@MainActivity, webView, file, fileName, object : PdfView.Callback {
 
                 override fun success(path: String) {
                     progressDialog.dismiss()
